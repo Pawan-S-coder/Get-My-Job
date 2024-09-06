@@ -38,7 +38,7 @@ export default class UserController{
     }
     logout(req,res){
       req.session.user=null;
-      res.clear.cookies('lastVisit');
       res.redirect('/');
+      res.clear.cookies('lastVisit');
     }
  }
