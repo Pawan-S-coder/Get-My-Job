@@ -1,0 +1,24 @@
+{
+  "name": "job-portal-website",
+  "version": "1.0.0",
+  "description": "this is jobportal website which helps job seekers to find good jobs and recruters to upload the jobs.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pawan sharma",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.0",
+    "express-validator": "^7.2.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.15"
+  },
+  "type": "module"
+}

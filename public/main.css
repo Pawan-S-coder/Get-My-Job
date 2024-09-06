@@ -1,0 +1,10 @@
+.error-box{
+    background-color: rgb(212, 189, 40);
+    width:auto;
+    height:100vh;
+}
+.col{
+    color: green;
+    left:80vh;
+
+}

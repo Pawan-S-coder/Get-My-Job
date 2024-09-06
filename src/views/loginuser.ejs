@@ -1,0 +1,71 @@
+
+    <!-- <nav id="mynav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">easily</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/jobs">Jobs</a>
+            </li>
+            <li class="nav-item dropdown">
+              
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Recruiter
+              </a>
+              
+
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item" href="/login">Login</a></li>
+                
+                <li><hr class="dropdown-divider"></li>
+                <li>
+                  <a class="dropdown-item" href="/postjob">Post New Job</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav> -->
+    <div><div class="container p-3 mx-auto w-50 form-box my-5 rounded-md">
+  <h2 style="color: #181642" class="text-center mb-3">Login</h2>
+  <form action="/login" method="post" class="p-2">
+    <% if (errorMessage) { %>
+      <div class="alert alert-danger"><%= errorMessage %></div>
+  <% } %>
+    
+
+    <div class="mb-3">
+      <div class="input-group">
+        <span class="input-group-text">Email</span>
+        <input required="" name="email" type="email" aria-label="email" class="form-control" value="<%= user ? user.email : '' %>" placeholder="enter your email">
+      </div>
+    </div>
+    <div class="mb-3">
+      <div class="input-group">
+        <span class="input-group-text">Password</span>
+        <input required="" name="password" type="password" aria-label="password"value="<%= user ? user.password : '' %>" class="form-control" placeholder="enter your password">
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-md mt-2 btn-danger lbtn">Login</button>
+    
+   
+  </form>
+</div>
+</div>
+  
+
